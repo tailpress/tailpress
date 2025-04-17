@@ -18,11 +18,12 @@
 		"production": "mix --production"
 	},
 	"devDependencies": {
+		"@tailwindcss/postcss": "^4.0.0",
 		"browser-sync": "^2.29.1",
 		"browser-sync-webpack-plugin": "^2.3.0",
 		"laravel-mix": "^6.0.29",
 		"postcss": "^8.5.1",
-		"tailwindcss": "^4.0.0",
-		"@tailwindcss/postcss": "^4.0.0"
+		"postcss-nested": "^7.0.2",
+		"tailwindcss": "^4.0.0"
 	}
 }
