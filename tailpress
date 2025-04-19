@@ -1,0 +1,39 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Input\ArgvInput;
+
+require_once __DIR__ . '/../../../wp-load.php';
+
+if(wp_get_environment_type() !== 'development') {
+    exit('This script can only be run in a development environment.' . PHP_EOL);
+}
+
+require __DIR__ . '/vendor/autoload.php';
+
+$app = new Application('TailPress r2d2', '1.0.0');
+
+$commands = TailPress::getInstance()->getCommands();
+
+$input = new ArgvInput;
+
+if ($input->getFirstArgument() === 'list') {
+    echo "Available commands:" . PHP_EOL;
+
+    foreach (array_keys($commands) as $commandName) {
+        echo "- " . $commandName . PHP_EOL;
+    }
+
+    exit(0);
+}
+
+if (!isset($commands[$input->getFirstArgument()])) {
+    exit('Error: Command not found.' . PHP_EOL);
+}
+
+$command = $commands[$input->getFirstArgument()] ?? null;
+
+$app->add(new $command);
+
+$app->run();

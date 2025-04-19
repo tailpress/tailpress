@@ -6,3 +6,4 @@ window.addEventListener('load', function () {
             main_navigation.classList.toggle('hidden');
       });
 });
+console.log('test123')

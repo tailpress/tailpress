@@ -75,7 +75,7 @@
 			<div class="container mx-auto">
 				<div class="px-12 py-16 my-12 rounded-xl bg-linear-to-r from-blue-50 from-10% via-sky-100 via-30% to-blue-200 to-90%">
                     <div class="mx-auto max-w-(--breakpoint-md)">
-                        <h1 class="text-3xl lg:text-6xl tracking-tight font-extrabold text-gray-800 mb-6">Start building your next <a href="https://tailwindcss.com" class="text-secondary">Tailwind CSS</a> flavoured WordPress theme
+                        <h1 class="font-display text-3xl lg:text-6xl tracking-tight font-extrabold text-red-400 mb-6">Start building your next <a href="https://tailwindcss.com" class="text-secondary">Tailwind CSS</a> flavoured WordPress theme
                             with <a href="https://tailpress.io" class="text-primary">TailPress</a>.</h1>
                         <p class="text-gray-600 text-xl font-medium mb-10">TailPress is your go-to starting
                             point for developing WordPress themes with Tailwind CSS and comes with basic block-editor support out
