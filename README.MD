@@ -1,4 +1,4 @@
-<p align="center"><a href="https://tailpress.io" target="_blank"><img src="https://tailpress.io/images/tailpress100.svg" width="260" alt="TailPress"></a></p>
+<p align="center"><a href="https://tailpress.io" target="_blank"><img src="https://tailpress.io/images/logo.svg" width="200" alt="TailPress"></a></p>
 
 <p align="center">
 <a href="https://github.com/jeffreyvr/tailpress/releases/"><img src="https://img.shields.io/github/release/jeffreyvr/tailpress?include_prereleases=&sort=semver" alt="GitHub release"></a>
@@ -17,7 +17,7 @@ You can use the TailPress [installer](#installer), or you can simply [clone](#cl
 
 To use installer, you need to install it globally via Composer:
 
-`composer global require jeffreyvanrossum/tailpress-installer`
+`composer global require tailpress/installer`
 
 Afterwards, you can run:
 
