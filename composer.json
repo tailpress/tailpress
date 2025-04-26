@@ -1,0 +1,13 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "tailpress/tailpress",
+    "description": "The Tailwind CSS powered WordPress boilerplate theme.",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeffrey van Rossum",
+            "email": "jeffrey@vanrossum.dev"
+        }
+    ]
+}
