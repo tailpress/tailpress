@@ -11,18 +11,6 @@
     padding-inline: 2rem;
 }
 
-/* @theme {
-    --font-display: "Raleway", "sans-serif";
-}
-
-@font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url("~fonts/raleway-v34-latin-500.woff2") format("woff2");
-} */
-
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still
