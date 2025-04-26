@@ -1,6 +1,6 @@
 {
 	"name": "tailpress",
-	"version": "4.0.0",
+	"version": "5.0.0",
 	"description": "Boilerplate WordPress theme with Tailwind CSS.",
 	"author": "Jeffrey van Rossum",
 	"repository": {
@@ -8,7 +8,7 @@
 		"url": "https://github.com/tailpress/tailpress"
 	},
 	"theme_uri": "https://github.com/tailpress/tailpress",
-	"author_uri": "https://vanrossum.dev",
+	"author_uri": "https://tailpress.io",
 	"text_domain": "tailpress",
 	"license": "MIT",
 	"scripts": {
