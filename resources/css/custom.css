@@ -14,7 +14,6 @@
 
   :where(h2) {
     font-weight: var(--font-weight-semibold);
-    font-variation-settings: var(--font-display--font-variation-settings);
     font-size: var(--text-2xl);
     line-height: var(--text-2xl--line-height);
     margin-top: --spacing(12);
@@ -22,7 +21,6 @@
 
   :where(h3) {
     font-weight: var(--font-weight-semibold);
-    font-variation-settings: var(--font-display--font-variation-settings);
     font-size: var(--text-xl);
     line-height: var(--text-xl--line-height);
     margin-top: --spacing(8);

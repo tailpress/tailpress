@@ -17,7 +17,7 @@
 <body <?php body_class('bg-white text-zinc-900 antialiased'); ?>>
 <?php do_action('tailpress_site_before'); ?>
 
-<div id="page" class="min-h-screen flex flex-col font-display">
+<div id="page" class="min-h-screen flex flex-col">
     <?php do_action('tailpress_header'); ?>
 
     <header class="container mx-auto py-6">
@@ -83,7 +83,7 @@
                         <path d="M98.23 31.4c-2.51-2.25-5.93-3.37-10.27-3.37s-7.9 1.08-11.16 3.23-5.94 5.16-8.05 9.01c-2.1 3.86-3.57 8.35-4.41 13.49-.84 5.2-.84 9.77 0 13.69s2.51 6.98 5.04 9.18c2.52 2.2 5.86 3.3 10 3.3s8.08-1.15 11.33-3.45c3.24-2.3 5.94-5.42 8.07-9.37 2.14-3.95 3.64-8.4 4.51-13.35.77-4.88.75-9.27-.07-13.16-.82-3.89-2.48-6.96-4.99-9.2Z"/>
                     </svg>
                     <div class="[&_a]:text-primary">
-                        <h1 class="leading-tight font-display text-3xl md:text-5xl font-medium tracking-tight text-balance text-zinc-950">
+                        <h1 class="leading-tight text-3xl md:text-5xl font-medium tracking-tight text-balance text-zinc-950">
                             Rapidly build your next WordPress theme with Tailwind CSS
                         </h1>
                         <p class="my-6 text-lg md:text-xl text-zinc-600 leading-8">

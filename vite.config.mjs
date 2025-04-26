@@ -1,4 +1,5 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig(({ command }) => {
     const isBuild = command === 'build';
@@ -20,6 +21,9 @@ export default defineConfig(({ command }) => {
                     'resources/css/editor-style.css'
                 ],
             },
-        }
+        },
+        plugins: [
+            tailwindcss(),
+        ],
     }
 });
