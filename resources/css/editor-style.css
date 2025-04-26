@@ -1,5 +1,10 @@
 @import 'tailwindcss';
 @import './theme.css';
+@import './custom.css';
+
+h1 {
+    @apply text-3xl mb-8;
+}
 
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,

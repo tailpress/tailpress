@@ -1,42 +1,85 @@
-article > *:not(.entry-content),
-.entry-content > * {
-    @apply mx-auto;
-}
+.entry-content,
+.block-editor-block-list__layout {
+  color: var(--color-zinc-950);
+  font-size: var(--text-lg);
+  line-height: var(--text-lg--line-height);
 
-.entry-content, .block-editor-block-list__layout {
-    h1 {
-        @apply text-2xl;
-    }
+  :where(
+      .entry-content > *:not(li),
+      .block-editor-block-list__layout > *:not(li)
+    ) {
+    margin-top: --spacing(6);
+    margin-bottom: --spacing(6);
+  }
 
-    h2 {
-        @apply text-xl;
-    }
+  :where(h2) {
+    font-weight: var(--font-weight-semibold);
+    font-variation-settings: var(--font-display--font-variation-settings);
+    font-size: var(--text-2xl);
+    line-height: var(--text-2xl--line-height);
+    margin-top: --spacing(12);
+  }
 
-    h3 {
-        @apply text-lg;
-    }
+  :where(h3) {
+    font-weight: var(--font-weight-semibold);
+    font-variation-settings: var(--font-display--font-variation-settings);
+    font-size: var(--text-xl);
+    line-height: var(--text-xl--line-height);
+    margin-top: --spacing(8);
+  }
 
-    p, ul, ol {
-        a {
-            @apply text-blue-500 underline;
+  :where(h2 + h3) {
+    margin-top: 0;
+  }
 
-            &:hover {
-                @apply no-underline;
-            }
-        }
+  :where(ul, ol) {
+    padding-left: 1.5rem;
+  }
 
-        @apply mb-8;
-    }
+  :where(ul) {
+    list-style-type: disc;
+  }
 
-    ul:not(.block-editor-block-variation-picker__variations) {
-        li {
-            @apply list-disc list-inside;
-        }
-    }
+  :where(ol) {
+    list-style-type: decimal;
+  }
 
-    ol {
-        li {
-            @apply list-decimal list-inside;
-        }
-    }
+  :where(a) {
+    color: var(--color-primary);
+  }
+
+  :where(li) {
+    padding-left: --spacing(3);
+  }
+
+  :where(li)::marker {
+    color: var(--color-zinc-500);
+  }
+
+  :where(li > *),
+  :where(li li) {
+    margin-top: --spacing(4);
+  }
+
+  :where(ol > li)::marker {
+    font-size: var(--text-base);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  :where(strong) {
+    font-weight: var(--font-weight-semibold);
+  }
+
+  :where(figure) {
+    margin-top: --spacing(12);
+    margin-bottom: --spacing(12);
+  }
+
+  :where(li > :first-child) {
+    margin-top: 0 !important;
+  }
+
+  :where(li > :last-child) {
+    margin-bottom: 0 !important;
+  }
 }

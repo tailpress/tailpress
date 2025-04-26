@@ -4,8 +4,70 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9e2c74fbb0faee3bcfa5ff2bac785dd1",
+    "content-hash": "c2ae0d2ca0e221191c3c51fc9af37c1e",
     "packages": [
+        {
+            "name": "automattic/jetpack-autoloader",
+            "version": "v2.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/jetpack-autoloader.git",
+                "reference": "632b69cfc73ed5505f2b03165e7f68d414d0da12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/jetpack-autoloader/zipball/632b69cfc73ed5505f2b03165e7f68d414d0da12",
+                "reference": "632b69cfc73ed5505f2b03165e7f68d414d0da12",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 || ^2.0"
+            },
+            "require-dev": {
+                "automattic/jetpack-changelogger": "^3.3.11",
+                "yoast/phpunit-polyfills": "1.1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Automattic\\Jetpack\\Autoloader\\CustomAutoloaderPlugin",
+                "autotagger": true,
+                "mirror-repo": "Automattic/jetpack-autoloader",
+                "branch-alias": {
+                    "dev-trunk": "2.12.x-dev"
+                },
+                "changelogger": {
+                    "link-template": "https://github.com/Automattic/jetpack-autoloader/compare/v${old}...v${new}"
+                },
+                "version-constants": {
+                    "::VERSION": "src/AutoloadGenerator.php"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Automattic\\Jetpack\\Autoloader\\": "src"
+                },
+                "classmap": [
+                    "src/AutoloadGenerator.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Creates a custom autoloader for a plugin or theme.",
+            "keywords": [
+                "autoload",
+                "autoloader",
+                "composer",
+                "jetpack",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/Automattic/jetpack-autoloader/tree/v2.12.0"
+            },
+            "time": "2023-09-28T18:33:34+00:00"
+        },
         {
             "name": "psr/container",
             "version": "dev-master",
@@ -636,12 +698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "a75110076ac661a4a52792b5a1d286d113653a70"
+                "reference": "f3570b8c61ca887a9e2938e85cb6458515d2b125"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/a75110076ac661a4a52792b5a1d286d113653a70",
-                "reference": "a75110076ac661a4a52792b5a1d286d113653a70",
+                "url": "https://api.github.com/repos/symfony/string/zipball/f3570b8c61ca887a9e2938e85cb6458515d2b125",
+                "reference": "f3570b8c61ca887a9e2938e85cb6458515d2b125",
                 "shasum": ""
             },
             "require": {
@@ -715,37 +777,43 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-02-24T14:05:52+00:00"
+            "time": "2025-04-20T20:19:01+00:00"
         },
         {
-            "name": "tailpress/vite",
+            "name": "tailpress/framework",
             "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tailpress/framework.git",
+                "reference": "1ba5d70b64b6a29272b05c003ff138780ed574e3"
+            },
             "dist": {
-                "type": "path",
-                "url": "/Users/jeffreyvanrossum/code/tailpress/vite",
-                "reference": "95188b6920b3390089de4d51e5bb2eb06786e3da"
+                "type": "zip",
+                "url": "https://api.github.com/repos/tailpress/framework/zipball/1ba5d70b64b6a29272b05c003ff138780ed574e3",
+                "reference": "1ba5d70b64b6a29272b05c003ff138780ed574e3",
+                "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^2.0",
+                "php": "^8.0",
                 "symfony/console": "^7.2"
             },
             "require-dev": {
-                "composer/composer": "^2.0"
+                "laravel/pint": "^1.22"
             },
+            "default-branch": true,
+            "bin": [
+                "bin/tailpress-cli"
+            ],
             "type": "library",
-            "extra": {
-                "tailpress": {
-                    "providers": [
-                        "TailPress\\Vite\\ServiceProvider"
-                    ]
-                },
-                "class": "TailPress\\Vite\\ComposerPlugin"
-            },
             "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
                 "psr-4": {
-                    "TailPress\\Vite\\": "src/"
+                    "TailPress\\Framework\\": "src/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -755,17 +823,19 @@
                     "email": "jeffrey@vanrossum.dev"
                 }
             ],
-            "description": "The Vite package for TailPress.",
-            "transport-options": {
-                "relative": false
-            }
+            "description": "The framework package for TailPress.",
+            "support": {
+                "issues": "https://github.com/tailpress/framework/issues",
+                "source": "https://github.com/tailpress/framework/tree/main"
+            },
+            "time": "2025-04-26T12:27:27+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "tailpress/vite": 20
+        "tailpress/framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

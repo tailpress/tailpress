@@ -1,5 +1,6 @@
 {
-  "version": 1,
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
   "settings": {
     "layout": {
       "contentSize": "960px",
@@ -10,93 +11,93 @@
         {
           "name": "Primary",
           "slug": "primary",
-          "color": "#0EA5E9"
+          "color": "#2C7FFF"
         },
         {
           "name": "Secondary",
           "slug": "secondary",
-          "color": "#14B8A6"
+          "color": "#FD9A00"
         },
         {
           "name": "Dark",
           "slug": "dark",
-          "color": "#1F2937"
+          "color": "#18181C"
         },
         {
           "name": "Light",
           "slug": "light",
-          "color": "#F9FAFB"
+          "color": "#F4F4F5"
         }
       ]
     },
     "typography": {
-        "fontSizes": [
-  {
-    "name": "Extra Small",
-    "slug": "xs",
-    "size": "0.75rem"
-  },
-  {
-    "name": "Small",
-    "slug": "sm",
-    "size": "0.875rem"
-  },
-  {
-    "name": "Base",
-    "slug": "base",
-    "size": "1rem"
-  },
-  {
-    "name": "Large",
-    "slug": "lg",
-    "size": "1.125rem"
-  },
-  {
-    "name": "Extra Large",
-    "slug": "xl",
-    "size": "1.25rem"
-  },
-  {
-    "name": "2XL",
-    "slug": "2xl",
-    "size": "1.5rem"
-  },
-  {
-    "name": "3XL",
-    "slug": "3xl",
-    "size": "1.875rem"
-  },
-  {
-    "name": "4XL",
-    "slug": "4xl",
-    "size": "2.25rem"
-  },
-  {
-    "name": "5XL",
-    "slug": "5xl",
-    "size": "3rem"
-  },
-  {
-    "name": "6XL",
-    "slug": "6xl",
-    "size": "3.75rem"
-  },
-  {
-    "name": "7XL",
-    "slug": "7xl",
-    "size": "4.5rem"
-  },
-  {
-    "name": "8XL",
-    "slug": "8xl",
-    "size": "6rem"
-  },
-  {
-    "name": "9XL",
-    "slug": "9xl",
-    "size": "8rem"
-  }
-]
+      "fontSizes": [
+        {
+          "name": "Extra Small",
+          "slug": "xs",
+          "size": "0.75rem"
+        },
+        {
+          "name": "Small",
+          "slug": "sm",
+          "size": "0.875rem"
+        },
+        {
+          "name": "Base",
+          "slug": "base",
+          "size": "1rem"
+        },
+        {
+          "name": "Large",
+          "slug": "lg",
+          "size": "1.125rem"
+        },
+        {
+          "name": "Extra Large",
+          "slug": "xl",
+          "size": "1.25rem"
+        },
+        {
+          "name": "2XL",
+          "slug": "2xl",
+          "size": "1.5rem"
+        },
+        {
+          "name": "3XL",
+          "slug": "3xl",
+          "size": "1.875rem"
+        },
+        {
+          "name": "4XL",
+          "slug": "4xl",
+          "size": "2.25rem"
+        },
+        {
+          "name": "5XL",
+          "slug": "5xl",
+          "size": "3rem"
+        },
+        {
+          "name": "6XL",
+          "slug": "6xl",
+          "size": "3.75rem"
+        },
+        {
+          "name": "7XL",
+          "slug": "7xl",
+          "size": "4.5rem"
+        },
+        {
+          "name": "8XL",
+          "slug": "8xl",
+          "size": "6rem"
+        },
+        {
+          "name": "9XL",
+          "slug": "9xl",
+          "size": "8rem"
+        }
+      ]
     }
   }
 }

@@ -1,74 +1,87 @@
 <?php
 /**
- * If the current post is protected by a password and
- * the visitor has not yet entered the password we will
- * return early without loading the comments.
+ * Comments template.
+ *
+ * @package TailPress
  */
-if ( post_password_required() ) {
-	return;
+
+if (post_password_required()) {
+    return;
 }
 ?>
 
-<div id="comments" class="comments-area my-8">
+<div id="comments" class="comments-area my-10 sm:my-20 mx-auto max-w-3xl">
+    <?php if (have_comments()): ?>
+        <h2 class="comments-title text-3xl font-medium text-zinc-900 mb-8">
+            <?php
+            printf(
+                esc_html(_nx(
+                    'One comment',
+                    '%1$s comments',
+                    get_comments_number(),
+                    'comments title',
+                    'tailpress'
+                )),
+                esc_html(number_format_i18n(get_comments_number()))
+            );
+            ?>
+        </h2>
 
-	<?php if ( have_comments() ) : ?>
-		<h2 class="comments-title">
-			<?php
-				printf(
-					_nx( 'One comment', '%1$s comments', get_comments_number(), 'comments title', 'tailpress' ),
-					number_format_i18n( get_comments_number() ),
-					get_the_title()
-				);
-			?>
-		</h2>
+        <ol class="comment-list [&_.children]:ml-20 [&_.children_>_li]:mt-8 mb-12">
+            <?php
+            wp_list_comments([
+                'format'      => 'html5',
+                'style'       => 'ol',
+                'short_ping'  => true,
+                'avatar_size' => 56,
+                'walker'      => new \TailPress\Walkers\CommentWalker(),
+            ]);
+            ?>
+        </ol>
 
-		<ol class="comment-list">
-			<?php
-				wp_list_comments(
-					array(
-						'style'       => 'ol',
-						'short_ping'  => true,
-						'avatar_size' => 56,
-					)
-				);
-			?>
-		</ol>
+        <?php if (get_comment_pages_count() > 1 && get_option('page_comments')): ?>
+            <nav class="comment-navigation flex justify-between" id="comment-nav-above" aria-label="<?php esc_attr_e('Comment navigation', 'tailpress'); ?>">
+                <div class="nav-previous">
+                    <?php previous_comments_link(esc_html__('Older Comments &larr;', 'tailpress')); ?>
+                </div>
+                <div class="nav-next">
+                    <?php next_comments_link(esc_html__('Newer Comments &rarr;', 'tailpress')); ?>
+                </div>
+            </nav>
+        <?php endif; ?>
+    <?php endif; ?>
 
-	<?php endif; ?>
+    <?php if (!comments_open() && get_comments_number() && post_type_supports(get_post_type(), 'comments')): ?>
+        <p class="no-comments text-zinc-600"><?php esc_html_e('Comments are closed.', 'tailpress'); ?></p>
+    <?php endif; ?>
 
-	<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : ?>
+    <?php
+        $commenter = wp_get_current_commenter();
 
-		<nav class="comment-navigation" id="comment-nav-above">
+        $req = get_option('require_name_email');
+        $aria_req = ($req ? ' aria-required="true"' : '');
 
-			<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'tailpress' ); ?></h1>
+        comment_form([
+            'fields' => apply_filters('comment_form_default_fields', [
+                'author' =>
+                    '<p class="comment-form-author">' .
+                    '<input id="author" class="bg-light w-full px-4 py-3 mb-4 rounded-xl text-sm" placeholder="' . esc_attr__('Your Name*', 'text-domain') . '" name="author" type="text" value="' . esc_attr($commenter['comment_author']) .
+                    '" size="30"' . $aria_req . ' /></p>',
 
-			<?php if ( get_previous_comments_link() ) { ?>
-					<div class="nav-previous">
-						<?php previous_comments_link( __( '&larr; Older Comments', 'tailpress' ) ); ?>
-					</div>
-			<?php } ?>
+                'email' =>
+                    '<p class="comment-form-email">' .
+                    '<input id="email" class="bg-light w-full px-4 py-3 mb-4 rounded-xl text-sm" placeholder="' . esc_attr__('Your Email Address*', 'text-domain') . '" name="email" type="text" value="' . esc_attr($commenter['comment_author_email']) .
+                    '" size="30"' . $aria_req . ' /></p>',
 
-			<?php if ( get_next_comments_link() ) { ?>
-				<div class="nav-next">
-					<?php next_comments_link( __( 'Newer Comments &rarr;', 'tailpress' ) ); ?>
-				</div>
-			<?php } ?>
-
-		</nav><!-- #comment-nav-above -->
-
-	<?php endif; ?>
-
-	<?php if ( ! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
-		<p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'tailpress' ); ?></p>
-	<?php endif; ?>
-
-	<?php
-	comment_form(
-		array(
-			'class_submit'  => 'bg-primary text-white cursor-pointer rounded-xs font-bold py-2 px-4',
-			'comment_field' => '<textarea id="comment" name="comment" class="bg-gray-200 w-full py-2 px-3" aria-required="true"></textarea>',
-		)
-	);
-	?>
-
+                'url' =>
+                    '<p class="comment-form-url">' .
+                    '<input id="url" class="bg-light w-full px-4 py-3 mb-4 rounded-xl text-sm" placeholder="' . esc_attr__('Your Website URL', 'text-domain') . '" name="url" type="text" value="' . esc_attr($commenter['comment_author_url']) .
+                    '" size="30" /></p>'
+            ]),
+            'title_reply_before' => '<h3 id="reply-title" class="comment-reply-title text-2xl font-bold mb-2">',
+            'class_submit'      => 'bg-dark rounded-full px-4 py-1.5 text-sm font-semibold text-light my-4',
+            'comment_field'     => '<textarea id="comment" name="comment" class="bg-light w-full px-4 py-3 my-2 rounded-xl text-sm" aria-required="true" placeholder="' . esc_attr__('Your comment', 'text-domain') . '"></textarea>',
+            'logged_in_as'      => '<p class="logged-in-as mb-4">',
+        ]);
+    ?>
 </div>

@@ -8,12 +8,22 @@
 }
 
 @utility alignwide {
-    width: calc(200px + var(--wp--style--global--wide-size));
+    width: 100%;
+    max-width: none;
+    position: relative;
 
     img {
-        width: 100%;
+        width: calc(100% + 320px) !important;
+        max-width: none !important;
+        margin-left: -160px;
+        margin-right: -160px;
+        display: block;
 
-        margin: 0 -100px 0 -100px !important;
+        @media (max-width: theme('screens.md')) {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100% !important;
+        }
     }
 }
 

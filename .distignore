@@ -1,0 +1,14 @@
+/resources
+/mix-manifest.json
+/webpack.mix.js
+/vite.config.mjs
+/package.json
+/package-lock.json
+.git/*
+.github/*
+phpcs.xml
+composer.json
+composer.lock
+.gitignore
+.distignore
+bitbucket-pipelines.yml

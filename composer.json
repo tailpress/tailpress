@@ -10,15 +10,20 @@
             "email": "jeffrey@vanrossum.dev"
         }
     ],
-    "require": {
-        "symfony/console": "^7.2",
-        "tailpress/vite": "dev-main"
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "~/code/tailpress/vite"
+    "autoload": {
+        "psr-4": {
+            "TailPress\\": "src/"
         }
-    ],
+    },
+    "require": {
+        "php": ">=8.0.2",
+        "tailpress/framework": "dev-main",
+        "automattic/jetpack-autoloader": "^2.10"
+    },
+    "config": {
+        "allow-plugins": {
+            "automattic/jetpack-autoloader": true
+        }
+    },
     "minimum-stability": "dev"
 }

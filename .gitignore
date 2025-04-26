@@ -1,5 +1,8 @@
 /node_modules
+/dist
+/vendor
+/.fleet
 /.idea
+/.nova
 /.vscode
-
-/vendor/
+/.zed

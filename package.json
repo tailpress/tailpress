@@ -5,21 +5,19 @@
 	"author": "Jeffrey van Rossum",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/jeffreyvr/tailpress"
+		"url": "https://github.com/tailpress/tailpress"
 	},
-	"theme_uri": "https://github.com/jeffreyvr/tailpress",
+	"theme_uri": "https://github.com/tailpress/tailpress",
 	"author_uri": "https://vanrossum.dev",
 	"text_domain": "tailpress",
 	"license": "MIT",
 	"scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
+		"dev": "vite",
+		"build": "vite build"
+	},
 	"devDependencies": {
 		"@tailwindcss/postcss": "^4.0.0",
-		"browser-sync": "^2.29.1",
-		"browser-sync-webpack-plugin": "^2.3.0",
-		"laravel-mix": "^6.0.29",
+		"autoprefixer": "^10.4.21",
 		"postcss": "^8.5.1",
 		"postcss-nested": "^7.0.2",
 		"tailwindcss": "^4.0.0",
