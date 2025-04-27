@@ -87,10 +87,8 @@
                             Rapidly build your next WordPress theme with Tailwind CSS
                         </h1>
                         <p class="my-6 text-lg md:text-xl text-zinc-600 leading-8">
-                            <a href="https://tailpress.io">TailPress</a> is a modular
-                            <a href="https://wordpress.org">WordPress</a> &
-                            <a href="https://tailwindcss.com">Tailwind CSS</a>
-                            theme ecosystem for developers, with tools, themes, and resources to build faster.
+                            <a href="https://tailpress.io">TailPress</a> is a <a href="https://tailwindcss.com">Tailwind CSS</a> flavoured <a href="https://wordpress.org">WordPress</a>
+                            boilerplate theme. It's your go-to starting point for building custom WordPress themes with modern tools and practices.
                         </p>
                     </div>
                     <div>
