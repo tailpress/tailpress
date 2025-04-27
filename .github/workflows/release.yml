@@ -41,10 +41,11 @@ jobs:
 
       - name: Create zip archive
         run: |
-          shopt -s extglob
           mkdir ${{ github.event.repository.name }}
-          mv !(${{ github.event.repository.name }}) ${{ github.event.repository.name }}/
-          zip -r -x@.distignore ${{ github.event.repository.name }}_${{ github.ref_name }}.zip ${{ github.event.repository.name }}/
+          rsync -a --exclude-from=.distignore . ${{ github.event.repository.name }}/
+          cd ${{ github.event.repository.name }}
+          zip -r ../${{ github.event.repository.name }}_${{ github.ref_name }}.zip .
+          cd ..
 
       - name: Publish release
         uses: softprops/action-gh-release@v1
