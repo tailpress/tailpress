@@ -42,7 +42,7 @@ jobs:
       - name: Create zip archive
         run: |
           mkdir ${{ github.event.repository.name }}
-          rsync -a --exclude-from=.distignore . ${{ github.event.repository.name }}/
+          rsync -a --exclude-from=.distignore --exclude=${{ github.event.repository.name }}/ . ${{ github.event.repository.name }}/
           cd ${{ github.event.repository.name }}
           zip -r ../${{ github.event.repository.name }}_${{ github.ref_name }}.zip .
           cd ..

@@ -9,8 +9,8 @@
 /.nova
 /.vscode
 /.zed
-.git/*
-.github/*
+.git
+.github
 phpcs.xml
 composer.json
 composer.lock
