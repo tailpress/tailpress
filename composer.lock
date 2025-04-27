@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c2ae0d2ca0e221191c3c51fc9af37c1e",
+    "content-hash": "63b72d928325b350907f0bcc3920c359",
     "packages": [
         {
             "name": "automattic/jetpack-autoloader",
@@ -70,22 +70,21 @@
         },
         {
             "name": "psr/container",
-            "version": "dev-master",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "707984727bd5b2b670e59559d3ed2500240cf875"
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/707984727bd5b2b670e59559d3ed2500240cf875",
-                "reference": "707984727bd5b2b670e59559d3ed2500240cf875",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/c71ecc56dfe541dbd90c5360474fbc405f8d5963",
+                "reference": "c71ecc56dfe541dbd90c5360474fbc405f8d5963",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.4.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "branch-alias": {
@@ -118,27 +117,26 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container"
+                "source": "https://github.com/php-fig/container/tree/2.0.2"
             },
-            "time": "2023-09-22T11:11:30+00:00"
+            "time": "2021-11-05T16:47:00+00:00"
         },
         {
             "name": "symfony/console",
-            "version": "7.3.x-dev",
+            "version": "v7.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "9bd4d772b9678ebf398763403a8676b3010a18a7"
+                "reference": "e51498ea18570c062e7df29d05a7003585b19b88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/9bd4d772b9678ebf398763403a8676b3010a18a7",
-                "reference": "9bd4d772b9678ebf398763403a8676b3010a18a7",
+                "url": "https://api.github.com/repos/symfony/console/zipball/e51498ea18570c062e7df29d05a7003585b19b88",
+                "reference": "e51498ea18570c062e7df29d05a7003585b19b88",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.5|^3",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/service-contracts": "^2.5|^3",
                 "symfony/string": "^6.4|^7.0"
@@ -148,8 +146,7 @@
                 "symfony/dotenv": "<6.4",
                 "symfony/event-dispatcher": "<6.4",
                 "symfony/lock": "<6.4",
-                "symfony/process": "<6.4",
-                "symfony/runtime": "<7.3"
+                "symfony/process": "<6.4"
             },
             "provide": {
                 "psr/log-implementation": "1.0|2.0|3.0"
@@ -199,7 +196,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/7.3"
+                "source": "https://github.com/symfony/console/tree/v7.2.5"
             },
             "funding": [
                 {
@@ -215,26 +212,25 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-07T19:11:40+00:00"
+            "time": "2025-03-12T08:11:12+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
-            "version": "dev-main",
+            "version": "v3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/deprecation-contracts.git",
-                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62"
+                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/63afe740e99a13ba87ec199bb07bbdee937a5b62",
-                "reference": "63afe740e99a13ba87ec199bb07bbdee937a5b62",
+                "url": "https://api.github.com/repos/symfony/deprecation-contracts/zipball/74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
+                "reference": "74c71c939a79f7d5bf3c1ce9f5ea37ba0114c6f6",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "thanks": {
@@ -242,7 +238,7 @@
                     "name": "symfony/contracts"
                 },
                 "branch-alias": {
-                    "dev-main": "3.6-dev"
+                    "dev-main": "3.5-dev"
                 }
             },
             "autoload": {
@@ -267,7 +263,7 @@
             "description": "A generic function and convention to trigger deprecation notices",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/deprecation-contracts/tree/main"
+                "source": "https://github.com/symfony/deprecation-contracts/tree/v3.5.1"
             },
             "funding": [
                 {
@@ -283,11 +279,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-25T14:21:43+00:00"
+            "time": "2024-09-25T14:20:29+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "1.x-dev",
+            "version": "v1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
@@ -308,7 +304,6 @@
             "suggest": {
                 "ext-ctype": "For best performance"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "thanks": {
@@ -367,7 +362,7 @@
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "1.x-dev",
+            "version": "v1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
@@ -385,7 +380,6 @@
             "suggest": {
                 "ext-intl": "For best performance"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "thanks": {
@@ -446,7 +440,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "1.x-dev",
+            "version": "v1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -464,7 +458,6 @@
             "suggest": {
                 "ext-intl": "For best performance"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "thanks": {
@@ -528,20 +521,19 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "1.x-dev",
+            "version": "v1.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493"
+                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6d857f4d76bd4b343eac26d6b539585d2bc56493",
-                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/85181ba99b2345b0ef10ce42ecac37612d9fd341",
+                "reference": "85181ba99b2345b0ef10ce42ecac37612d9fd341",
                 "shasum": ""
             },
             "require": {
-                "ext-iconv": "*",
                 "php": ">=7.2"
             },
             "provide": {
@@ -550,7 +542,6 @@
             "suggest": {
                 "ext-mbstring": "For best performance"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "thanks": {
@@ -590,7 +581,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.31.0"
             },
             "funding": [
                 {
@@ -606,20 +597,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-23T08:48:59+00:00"
+            "time": "2024-09-09T11:45:10+00:00"
         },
         {
             "name": "symfony/service-contracts",
-            "version": "dev-main",
+            "version": "v3.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "5ad38698559cf88b6296629e19b15ef3239c9d7a"
+                "reference": "e53260aabf78fb3d63f8d79d69ece59f80d5eda0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/5ad38698559cf88b6296629e19b15ef3239c9d7a",
-                "reference": "5ad38698559cf88b6296629e19b15ef3239c9d7a",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/e53260aabf78fb3d63f8d79d69ece59f80d5eda0",
+                "reference": "e53260aabf78fb3d63f8d79d69ece59f80d5eda0",
                 "shasum": ""
             },
             "require": {
@@ -630,7 +621,6 @@
             "conflict": {
                 "ext-psr": "<1.1|>=2"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "thanks": {
@@ -638,7 +628,7 @@
                     "name": "symfony/contracts"
                 },
                 "branch-alias": {
-                    "dev-main": "3.6-dev"
+                    "dev-main": "3.5-dev"
                 }
             },
             "autoload": {
@@ -674,7 +664,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/main"
+                "source": "https://github.com/symfony/service-contracts/tree/v3.5.1"
             },
             "funding": [
                 {
@@ -690,20 +680,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-25T14:21:43+00:00"
+            "time": "2024-09-25T14:20:29+00:00"
         },
         {
             "name": "symfony/string",
-            "version": "7.3.x-dev",
+            "version": "v7.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "f3570b8c61ca887a9e2938e85cb6458515d2b125"
+                "reference": "446e0d146f991dde3e73f45f2c97a9faad773c82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/f3570b8c61ca887a9e2938e85cb6458515d2b125",
-                "reference": "f3570b8c61ca887a9e2938e85cb6458515d2b125",
+                "url": "https://api.github.com/repos/symfony/string/zipball/446e0d146f991dde3e73f45f2c97a9faad773c82",
+                "reference": "446e0d146f991dde3e73f45f2c97a9faad773c82",
                 "shasum": ""
             },
             "require": {
@@ -761,7 +751,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/7.3"
+                "source": "https://github.com/symfony/string/tree/v7.2.0"
             },
             "funding": [
                 {
@@ -777,7 +767,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-04-20T20:19:01+00:00"
+            "time": "2024-11-13T13:31:26+00:00"
         },
         {
             "name": "tailpress/framework",
@@ -785,17 +775,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/tailpress/framework.git",
-                "reference": "1ba5d70b64b6a29272b05c003ff138780ed574e3"
+                "reference": "6622f13aa7538be593c33e1c236f90cc9a287232"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tailpress/framework/zipball/1ba5d70b64b6a29272b05c003ff138780ed574e3",
-                "reference": "1ba5d70b64b6a29272b05c003ff138780ed574e3",
+                "url": "https://api.github.com/repos/tailpress/framework/zipball/6622f13aa7538be593c33e1c236f90cc9a287232",
+                "reference": "6622f13aa7538be593c33e1c236f90cc9a287232",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0",
-                "symfony/console": "^7.2"
+                "php": ">=8.0.2",
+                "symfony/console": "^6.0|^7.0"
             },
             "require-dev": {
                 "laravel/pint": "^1.22"
@@ -828,18 +818,142 @@
                 "issues": "https://github.com/tailpress/framework/issues",
                 "source": "https://github.com/tailpress/framework/tree/main"
             },
-            "time": "2025-04-26T12:27:27+00:00"
+            "time": "2025-04-26T12:45:34+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "symfony/filesystem",
+            "version": "v7.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "b8dce482de9d7c9fe2891155035a7248ab5c7fdb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/b8dce482de9d7c9fe2891155035a7248ab5c7fdb",
+                "reference": "b8dce482de9d7c9fe2891155035a7248ab5c7fdb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.8"
+            },
+            "require-dev": {
+                "symfony/process": "^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v7.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2024-10-25T15:15:23+00:00"
+        },
+        {
+            "name": "tailpress/cli",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tailpress/cli.git",
+                "reference": "03105d4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tailpress/cli/zipball/03105d4",
+                "reference": "03105d4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.2",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/filesystem": "^7.2",
+                "tailpress/framework": "dev-main"
+            },
+            "default-branch": true,
+            "bin": [
+                "bin/tailpress-cli"
+            ],
+            "type": "library",
+            "extra": {
+                "tailpress": {
+                    "providers": [
+                        "TailPress\\Cli\\CliServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TailPress\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeffrey van Rossum",
+                    "email": "jeffrey@vanrossum.dev"
+                }
+            ],
+            "description": "The TailPress command line interface",
+            "support": {
+                "issues": "https://github.com/tailpress/cli/issues",
+                "source": "https://github.com/tailpress/cli/tree/main"
+            },
+            "time": "2025-04-27T15:48:32+00:00"
+        }
+    ],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
+        "tailpress/cli": 20,
         "tailpress/framework": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": {},
+    "platform": {
+        "php": ">=8.0.2"
+    },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }

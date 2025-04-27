@@ -20,10 +20,12 @@
         "tailpress/framework": "dev-main",
         "automattic/jetpack-autoloader": "^2.10"
     },
+    "require-dev": {
+        "tailpress/cli": "dev-main"
+    },
     "config": {
         "allow-plugins": {
             "automattic/jetpack-autoloader": true
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
