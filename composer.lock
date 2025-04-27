@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "63b72d928325b350907f0bcc3920c359",
+    "content-hash": "3d1596317083393007aa3eea1aa31857",
     "packages": [
         {
             "name": "automattic/jetpack-autoloader",
@@ -771,16 +771,16 @@
         },
         {
             "name": "tailpress/framework",
-            "version": "dev-main",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tailpress/framework.git",
-                "reference": "6622f13aa7538be593c33e1c236f90cc9a287232"
+                "reference": "783f81256c41e7717560119bb0f8b55ef03f786e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tailpress/framework/zipball/6622f13aa7538be593c33e1c236f90cc9a287232",
-                "reference": "6622f13aa7538be593c33e1c236f90cc9a287232",
+                "url": "https://api.github.com/repos/tailpress/framework/zipball/783f81256c41e7717560119bb0f8b55ef03f786e",
+                "reference": "783f81256c41e7717560119bb0f8b55ef03f786e",
                 "shasum": ""
             },
             "require": {
@@ -788,12 +788,9 @@
                 "symfony/console": "^6.0|^7.0"
             },
             "require-dev": {
-                "laravel/pint": "^1.22"
+                "laravel/pint": "^1.22",
+                "tailpress/cli": "^5.0"
             },
-            "default-branch": true,
-            "bin": [
-                "bin/tailpress-cli"
-            ],
             "type": "library",
             "autoload": {
                 "files": [
@@ -816,9 +813,9 @@
             "description": "The framework package for TailPress.",
             "support": {
                 "issues": "https://github.com/tailpress/framework/issues",
-                "source": "https://github.com/tailpress/framework/tree/main"
+                "source": "https://github.com/tailpress/framework/tree/5.0.1"
             },
-            "time": "2025-04-26T12:45:34+00:00"
+            "time": "2025-04-27T16:50:21+00:00"
         }
     ],
     "packages-dev": [
@@ -890,25 +887,24 @@
         },
         {
             "name": "tailpress/cli",
-            "version": "dev-main",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tailpress/cli.git",
-                "reference": "03105d4"
+                "reference": "6992eb58ce330c885e8f66f1711aed5fe77af6e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tailpress/cli/zipball/03105d4",
-                "reference": "03105d4",
+                "url": "https://api.github.com/repos/tailpress/cli/zipball/6992eb58ce330c885e8f66f1711aed5fe77af6e7",
+                "reference": "6992eb58ce330c885e8f66f1711aed5fe77af6e7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.0.2",
                 "symfony/console": "^6.0|^7.0",
                 "symfony/filesystem": "^7.2",
-                "tailpress/framework": "dev-main"
+                "tailpress/framework": "^5.0"
             },
-            "default-branch": true,
             "bin": [
                 "bin/tailpress-cli"
             ],
@@ -938,17 +934,14 @@
             "description": "The TailPress command line interface",
             "support": {
                 "issues": "https://github.com/tailpress/cli/issues",
-                "source": "https://github.com/tailpress/cli/tree/main"
+                "source": "https://github.com/tailpress/cli/tree/5.0.1"
             },
-            "time": "2025-04-27T15:48:32+00:00"
+            "time": "2025-04-27T16:50:03+00:00"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "tailpress/cli": 20,
-        "tailpress/framework": 20
-    },
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

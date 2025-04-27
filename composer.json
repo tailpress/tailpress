@@ -17,11 +17,11 @@
     },
     "require": {
         "php": ">=8.0.2",
-        "tailpress/framework": "dev-main",
+        "tailpress/framework": "^5.0",
         "automattic/jetpack-autoloader": "^2.10"
     },
     "require-dev": {
-        "tailpress/cli": "dev-main"
+        "tailpress/cli": "^5.0"
     },
     "config": {
         "allow-plugins": {
