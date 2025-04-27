@@ -4,6 +4,7 @@ on:
   release:
     types:
       - created
+  workflow_dispatch:  # For testing
 
 jobs:
   build:
@@ -30,7 +31,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16'
+          node-version: '18'
 
       - name: Install npm dependencies
         run: npm ci
