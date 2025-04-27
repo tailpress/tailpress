@@ -4,6 +4,28 @@ All notable changes to TailPress will be documented in this file.
 
 ## Unreleased
 
+## 5.0.0
+
+- Major update to default styling and template files
+- Vite as default compiler ([docs](https://tailpress.io/docs/5.0/vite))
+- Use composer autoloading
+- Use `tailpress/framework` package for theme setup
+- Improvement default comments styling
+- Adding `Pagination` class
+- Search bar in header
+- Create a ZIP-version of your theme ([docs](https://tailpress.io/docs/5.0/release#using-tailpress-cli))
+
+## 4.0.1
+
+- Update npm dependencies by @jeffreyvr in #269
+
+## 4.0.0
+
+- Adding Tailwind CSS v4 support by @jeffreyvr in #254
+- Add support for responsive embeds by @brendannee in #217
+
+## 3.4.0
+
 - Use `mix.options({ manifest: false })` instead of deprecated `Mix.manifest.refresh = _ => void 0`
 
 ## 3.3.0
