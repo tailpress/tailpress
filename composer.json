@@ -17,7 +17,7 @@
     },
     "require": {
         "php": ">=8.0.2",
-        "tailpress/framework": "^5.0",
+        "tailpress/framework": "^5.0.3",
         "automattic/jetpack-autoloader": "^2.10"
     },
     "require-dev": {
